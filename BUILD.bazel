@@ -1,0 +1,4 @@
+sh_binary(
+    name = "postgres",
+    srcs = ["run_docker.sh"],
+)

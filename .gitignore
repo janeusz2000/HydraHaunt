@@ -1,0 +1,9 @@
+.temp/
+
+# Bazel
+/bazel-out/
+/bazel-testlogs/
+/bazel-bin/
+/bazel-genfiles/
+/bazel-*
+.bazelrc.user
