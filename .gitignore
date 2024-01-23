@@ -7,3 +7,4 @@
 /bazel-genfiles/
 /bazel-*
 .bazelrc.user
+/MODULE.bazel.lock
