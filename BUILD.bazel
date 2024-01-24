@@ -24,3 +24,9 @@ genrule(
     cmd = "(./$(location :create_postgres) && ./$(location :doSomething) && ./$(location :stop_postgres) && ./$(location :delete_postgres)) > $@",
     tools = [":create_postgres", ":doSomething", ":stop_postgres", ":delete_postgres"],
 )
+
+py_binary(
+  name = "check_environment",
+  srcs = ["check_environment.py"],
+  main = "check_environment.py",
+)
