@@ -1,0 +1,8 @@
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+  name = "hydra_hunter",
+  url = "https://github.com/janeusz2000/HydraHunter/archive/refs/tags/Experimental.tar.gz"
+)
+
+
