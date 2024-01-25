@@ -1,9 +1,1 @@
 workspace(name = "HydraHunter")
-
-load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
-
-http_archive(
-    name = "io_bazel_rules_docker",
-    strip_prefix = "rules_docker-0.25.0",  # Replace <version> with the correct version
-    urls = ["https://github.com/bazelbuild/rules_docker/archive/v0.25.0.tar.gz"],  # Replace <version> with the version tag
-)

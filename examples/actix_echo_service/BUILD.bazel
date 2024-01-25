@@ -1,0 +1,8 @@
+load("@hydra_hunter//bazel_rules:hydra_hunt_binary.bzl", "hydra_hunt_binary")
+
+hydra_hunt_binary(
+  name = "build_echo_service",
+  command = "cargo build --release",
+  binary_path = "target/release/echo_service"
+)
+

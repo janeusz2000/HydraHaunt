@@ -1,0 +1,6 @@
+# Bazel build output directories
+bazel-bin/
+bazel-out/
+bazel-testlogs/
+target/
+Cargo.lock

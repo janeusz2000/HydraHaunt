@@ -1,0 +1,7 @@
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+
+git_repository(
+    name = "hydra_hunter",
+    remote = "git@github.com:janeusz2000/HydraHunter.git",
+    commit = "f52b0a8f56efa7967f99a4610de400dd34beb837",
+)
