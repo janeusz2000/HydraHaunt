@@ -1,1 +1,2 @@
-load("//:hydra_hunt_binary.bzl", "hydra_hunt_binary") 
+load("//:hydra_prepare_binary.bzl", "hydra_prepare_binary")
+load("//:build_hydra_binary.bzl", "build_hydra_binary")

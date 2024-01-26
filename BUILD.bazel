@@ -1,2 +1,2 @@
-# Expose Hydra Hunt Library
-load("//bazel_rules:hydra_hunt_binary.bzl", "hydra_hunt_binary") 
+load("//bazel_rules:hydra_prepare_binary.bzl", "hydra_prepare_binary")
+load("//bazel_rules:build_hydra_binary.bzl", "build_hydra_binary")

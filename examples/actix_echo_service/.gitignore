@@ -4,3 +4,7 @@ bazel-out/
 bazel-testlogs/
 target/
 Cargo.lock
+bazel-actix_echo_service
+bazel-bin
+bazel-out
+bazel-testlogs

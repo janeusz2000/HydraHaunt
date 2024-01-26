@@ -1,8 +1,26 @@
-load("@hydra_hunter//bazel_rules:hydra_hunt_binary.bzl", "hydra_hunt_binary")
+# load("@hydra_hunter//bazel_rules:hydra_prepare_binary.bzl", "hydra_prepare_binary")
+load("@hydra_hunter//bazel_rules:build_hydra_binary.bzl", "build_hydra_binary")
 
-hydra_hunt_binary(
-  name = "build_echo_service",
-  command = "cargo build --release",
-  binary_path = "target/release/echo_service"
+build_hydra_binary(
+    name = "rust_binary_builder",
+    build_script = "//:build_rust_binary.sh",
+    additional_inputs = [
+      "//:Cargo.toml",
+      "//:src",
+      "//:Cargo.lock"
+    ],
 )
 
+# sh_binary(
+#     name = "build_rust_binary",
+#     srcs = ["build_rust_binary.sh"],
+# )
+
+# hydra_prepare_binary(
+#     name = "echo_service",
+#     target_build = ":build_rust_binary",
+#     target_binary = [
+#         "//:target/release/echo_service",
+#         "//:target/release/deps",
+#     ],
+# )
